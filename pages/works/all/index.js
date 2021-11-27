@@ -16,9 +16,11 @@ export default function AllWorks(){
 AllWorks.getLayout = (page)=>(
     <Layout>
         <WorkHeader>
-            <AllWorkLayout>
-                 {page}
-            </AllWorkLayout>
+            <div>
+              <AllWorkLayout>
+                 <div> {page} </div>
+              </AllWorkLayout>
+            </div>
         </WorkHeader>
     </Layout>
 )

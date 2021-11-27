@@ -13,7 +13,7 @@ export default function MongoWorks({children}){
     const number = data.length;
     return(
         <> 
-          <ul>
+          <ul className="tab_list">
             <li><Link href="/works/all"><a>All</a></Link></li>
             <li><Link href="/works/react"><a>React</a></Link></li>
             <li><Link href="/works/next"><a>Next</a></Link></li>
@@ -21,14 +21,16 @@ export default function MongoWorks({children}){
             <li className="highlight"><Link href="/works/mongo"><a>Mongo</a></Link></li>
           </ul>
          <h3>Next Works / {number} works</h3>
-          <ul>
+         <div className="work_flex">
+          <ul id="work_left" className="work_list">
             {data.map((work)=>(
                 <li key={work._id}>
                     <Link href={`/works/mongo/${work._id}`}><a><p>{work.name}</p></a></Link>
                 </li>
             ))}
           </ul>
-        <main>{children}</main>
+         <main id="work_right">{children}</main>
+        </div>
         </>
     )
 }

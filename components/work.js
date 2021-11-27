@@ -8,7 +8,9 @@ export default function Work({children}){
     }, [])
  return(
      <>
-    <h2 className={`page_header ${effect?"page_header_effect":""}`}>Work</h2>
+      <div className="header_font">
+          <h2 className={`page_header ${effect?"page_header_effect":""}`}>Work</h2>
+      </div>
     <div>{children}</div>
     </>
  )

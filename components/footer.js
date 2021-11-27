@@ -2,8 +2,8 @@
 
 export default function Navbar(){
     return(
-        <div>
-           <p>Neu-Gier</p>
+        <div id="footer">
+           <p id="footer_part">Neu-Gier</p>
         </div>
     )
 }

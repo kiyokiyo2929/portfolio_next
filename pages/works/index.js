@@ -18,7 +18,7 @@ export default function Works(){
             <title>Work / Neu-Gier</title>
         </Head>
         {/* <h2 className={`page_header ${effect?"page_header_effect":""}`}>Work</h2> */}
-        <ul>
+        <ul className="tab_list">
             <li><Link href="/works/all"><a>All</a></Link></li>
             <li><Link href="/works/react"><a>React</a></Link></li>
             <li><Link href="/works/next"><a>Next</a></Link></li>

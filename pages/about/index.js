@@ -16,7 +16,9 @@ export default function About(){
         <Head>
             <title>About / Neu-Gier</title>
         </Head>
-        <h2 className={`page_header ${effect?"page_header_effect":""}`}>About</h2>
+        <div className="header_font">
+           <h2 className={`page_header ${effect?"page_header_effect":""}`}>About</h2>
+        </div>
         </>
     )
 }

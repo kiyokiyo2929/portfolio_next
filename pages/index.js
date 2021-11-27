@@ -2,6 +2,7 @@ import Head from 'next/head'
 import clientPromise from '../lib/mongodb';
 import Layout from '../components/layout_navbar_footer';
 
+
 export default function Home({ isConnected }) {
   return (
     <div className="container">

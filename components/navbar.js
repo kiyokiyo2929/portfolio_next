@@ -51,8 +51,8 @@ export default function Navbar(){
    }
 
     return(
-        <div>
-            <ul>
+        <div id="header">
+            <ul id="navbar_part">
                 <li onClick={work_click} className={work?"highlight":""}><Link href="/works"><a>Work</a></Link></li>
                 <li onClick={about_click}  className={about?"highlight":""}><Link href="/about"><a>About</a></Link></li>
                 <li onClick={contact_click} className={contact?"highlight":""}><Link href="/contact"><a>Contact</a></Link></li>

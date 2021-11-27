@@ -1,3 +1,70 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#main_part {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* header */
+#header {
+  border-bottom: solid 0.2px gainsboro;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+#navbar_part {
+  display: flex;
+  height: 7.5vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#navbar_part > li {
+  list-style: none;
+  margin-right: 1vw;
+  line-height: 7.5vh;
+}
+
+#navbar_part a {
+  text-decoration: none;
+  color: black;
+}
+
+/* footer */
+#footer {
+  position: absolute;
+  bottom: 1vh;
+  width: 100vw;
+  height: 7.5vh;
+}
+
+#footer_part {
+  margin: 0 auto;
+  width: 90vw;
+  height: 7.5vh;
+  border-top: solid 0.2px gainsboro;
+}
+
+#footer > p {
+  margin: 0 auto;
+  line-height: 7.5vh;
+  text-align: center;
+}
+
+/* common item */
+.header_font > h2 {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 5vh;
+  text-align: left;
+  font-size: 16vh;
+}
+
 .highlight {
   font-weight: bold;
   color: black;
@@ -12,4 +79,35 @@
 .page_header_effect {
   opacity: 1;
   transform: translateX(0px);
+}
+
+/* work page */
+.tab_list {
+  display: flex;
+}
+
+.tab_list > li {
+  list-style: none;
+  margin-right: 1vw;
+}
+
+.tab_list > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.work_flex {
+  display: flex;
+}
+
+#work_left {
+  width: 50%;
+}
+
+#work_right {
+  width: 50%;
+}
+
+.work_list {
+  list-style: none;
 }
