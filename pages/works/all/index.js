@@ -1,5 +1,6 @@
 import Layout  from "../../../components/layout_navbar_footer";
-import AllWorkLayout from "../../../components/all_works"
+import AllWorkLayout from "../../../components/all_works";
+import WorkHeader from "../../../components/work";
 import Head from "next/head"
 
 export default function AllWorks(){
@@ -14,8 +15,10 @@ export default function AllWorks(){
 
 AllWorks.getLayout = (page)=>(
     <Layout>
-        <AllWorkLayout>
-        {page}
-        </AllWorkLayout>
+        <WorkHeader>
+            <AllWorkLayout>
+                 {page}
+            </AllWorkLayout>
+        </WorkHeader>
     </Layout>
 )

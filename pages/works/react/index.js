@@ -1,5 +1,6 @@
 import Layout  from "../../../components/layout_navbar_footer";
 import ReactWorkLayout from "../../../components/react_works";
+import WorkHeader from "../../../components/work";
 
 import Head from "next/head";
 
@@ -13,8 +14,10 @@ export default function ReactWorks(){
 
 ReactWorks.getLayout = (page)=>(
     <Layout>
+      <WorkHeader>
         <ReactWorkLayout>
         {page}
         </ReactWorkLayout>
+      </WorkHeader>
     </Layout>
 )

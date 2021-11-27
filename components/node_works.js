@@ -17,7 +17,7 @@ export default function NodeWorks({children}){
             <li><Link href="/works/all"><a>All</a></Link></li>
             <li><Link href="/works/react"><a>React</a></Link></li>
             <li><Link href="/works/next"><a>Next</a></Link></li>
-            <li><Link href="/works/node"><a>Node</a></Link></li>
+            <li className="highlight"><Link href="/works/node"><a>Node</a></Link></li>
             <li><Link href="/works/mongo"><a>Mongo</a></Link></li>
           </ul>
          <h3>React Works / {number} works</h3>

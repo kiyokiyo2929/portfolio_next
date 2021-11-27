@@ -3,6 +3,7 @@ import Head from "next/head"
 
 import Layout from "../../../components/layout_navbar_footer";
 import MongoWorks from "../../../components/mongo_works";
+import WorkHeader from "../../../components/work";
 
 const ObjectId = require('mongodb').ObjectID;
 
@@ -32,8 +33,10 @@ export async function getServerSideProps({params}){
 
 EachWork.getLayout=(page)=>(
     <Layout>
+      <WorkHeader>
         <MongoWorks>
-        {page}
+         {page}
         </MongoWorks>
+       </WorkHeader>
     </Layout>
 )

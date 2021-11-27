@@ -1,5 +1,6 @@
 import Layout  from "../../../components/layout_navbar_footer";
 import NodeWorkLayout from "../../../components/node_works";
+import WorkHeader from "../../../components/work";
 import Head from "next/head";
 
 export default function NodeWorks(){
@@ -12,8 +13,10 @@ export default function NodeWorks(){
 
 NodeWorks.getLayout = (page)=>(
     <Layout>
+      <WorkHeader>
         <NodeWorkLayout>
         {page}
         </NodeWorkLayout>
+       </WorkHeader>
     </Layout>
 )

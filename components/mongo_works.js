@@ -12,13 +12,13 @@ export default function MongoWorks({children}){
 
     const number = data.length;
     return(
-        <>
+        <> 
           <ul>
             <li><Link href="/works/all"><a>All</a></Link></li>
             <li><Link href="/works/react"><a>React</a></Link></li>
             <li><Link href="/works/next"><a>Next</a></Link></li>
             <li><Link href="/works/node"><a>Node</a></Link></li>
-            <li><Link href="/works/mongo"><a>Mongo</a></Link></li>
+            <li className="highlight"><Link href="/works/mongo"><a>Mongo</a></Link></li>
           </ul>
          <h3>Next Works / {number} works</h3>
           <ul>

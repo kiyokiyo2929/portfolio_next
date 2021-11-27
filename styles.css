@@ -1,0 +1,15 @@
+.highlight {
+  font-weight: bold;
+  color: black;
+}
+
+.page_header {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 2s, transform 2s;
+}
+
+.page_header_effect {
+  opacity: 1;
+  transform: translateX(0px);
+}
