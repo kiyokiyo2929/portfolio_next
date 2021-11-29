@@ -22,7 +22,7 @@ export default function MongoWorks({children}){
             <li className="normal_tag tag_event"><Link href="/works/node"><a>Node.js</a></Link></li>
             <li className="highlight_tag"><Link href="/works/mongo"><a>MongoDB</a></Link></li>
           </ul>
-         <p className="result_number">Next Works / <span className="result_number_bold">{number} </span> works</p>
+         <p className="result_number">Works with MongoDB / <span className="result_number_bold">{number} </span> works</p>
         
 
             <div>

@@ -42,6 +42,10 @@ export default function EachWork(work){
         setButton3(true);
     }
 
+    useEffect(()=>{
+        image1_click();
+    }, [work])
+
     return(
         <>
          <Head><title>{work.work.name} / New-Gier</title></Head>

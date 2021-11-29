@@ -3,6 +3,8 @@ import Head from "next/head"
 import React, {useState, useEffect} from 'react';
 
 
+
+
 import Layout from "../../../components/layout_navbar_footer";
 import NextWorks from "../../../components/next_works";
 import WorkHeader from "../../../components/work";
@@ -42,6 +44,11 @@ export default function EachWork(work){
         setButton2(false);
         setButton3(true);
     }
+
+
+    useEffect(()=>{
+        image1_click();
+    }, [work])
 
     return(
         <>

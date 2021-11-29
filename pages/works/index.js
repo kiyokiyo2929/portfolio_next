@@ -2,15 +2,10 @@ import Link from "next/link";
 import Head from "next/head";
 import React, {useState, useEffect } from "react";
 import Layout from "../../components/layout_navbar_footer";
-import WorkLayout from "../../components/work";
+import WorkHeader from "../../components/work";
 
 
 export default function Works(){
-    const [effect, setEffect] = useState(false);
- 
-    useEffect(()=>{
-        setEffect(true)
-    }, [])
     return(
         <>
         <Head>
@@ -31,8 +26,8 @@ export default function Works(){
 
 Works.getLayout = (page) => (
     <Layout>
-      <WorkLayout>
+      <WorkHeader>
         {page}
-      </WorkLayout>
+      </WorkHeader>
     </Layout>
 )
