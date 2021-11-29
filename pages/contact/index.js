@@ -15,9 +15,17 @@ export default function Contact(){
         <Head>
             <title> Contact / Neu-Gier </title>
         </Head>
-           <div className="header_font">
-              <h2 className={`page_header ${effect?"page_header_effect":""}`}>Contact</h2>
-           </div>
+        <div id="contact_flext">
+            <div id="contact_left">
+                <div className="header_font">
+                    <h2 className={`page_header ${effect?"page_header_effect":""}`}>Contact</h2>
+                </div>
+                <p>Kiyohide Hayashi</p>
+            </div>
+            <div id="contact_right">
+
+            </div>
+        </div>
         </>
     )
 }

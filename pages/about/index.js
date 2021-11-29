@@ -16,8 +16,25 @@ export default function About(){
         <Head>
             <title>About / Neu-Gier</title>
         </Head>
-        <div className="header_font">
-           <h2 className={`page_header ${effect?"page_header_effect":""}`}>About</h2>
+        <div id="about_flex">
+            <div id="about_left">
+                 <div className="header_font">
+                  <h2 className={`page_header ${effect?"page_header_effect":""}`}>About</h2>
+                 </div>
+                 <div id="about_description">
+                     <p id="first_description">I'm Kiyohide Hayashi.</p>
+                     <p>I'm Japanese.</p>
+                     <p>I'm a full stack developer.</p>
+                     <p>I live in Berlin.</p>
+                     <p>I can speak Japanese and English.</p>
+                     <p>I can use JavaScript/React/Node.js/Express.js and MongoDB.</p>
+                     <p>I like contemporary art and design.</p>
+                </div>
+            </div>
+            <div id="about_right">
+
+            </div>
+
         </div>
         </>
     )

@@ -4,9 +4,8 @@ import {useRouter} from 'next/router';
 
 export default function Navbar(){
     const router = useRouter();
-    console.log(router.pathname)
     const url = router.pathname.slice(1,3)
-    console.log(url)
+
 
     useEffect(()=>{
         check_url()
@@ -53,9 +52,9 @@ export default function Navbar(){
     return(
         <div id="header">
             <ul id="navbar_part">
-                <li onClick={work_click} className={work?"highlight":""}><Link href="/works"><a>Work</a></Link></li>
-                <li onClick={about_click}  className={about?"highlight":""}><Link href="/about"><a>About</a></Link></li>
-                <li onClick={contact_click} className={contact?"highlight":""}><Link href="/contact"><a>Contact</a></Link></li>
+                <li  className={work?"highlight_nav":"normal_nav"}><Link href="/works"><a>Work</a></Link></li>
+                <li  className={about?"highlight_nav":"normal_nav"}><Link href="/about"><a>About</a></Link></li>
+                <li  className={contact?"highlight_nav":"normal_nav"}><Link href="/contact"><a>Contact</a></Link></li>
             </ul>
         </div>
     )

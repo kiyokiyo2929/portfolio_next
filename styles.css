@@ -26,13 +26,21 @@
 
 #navbar_part > li {
   list-style: none;
-  margin-right: 1vw;
+  margin-right: 3.3vw;
   line-height: 7.5vh;
 }
 
 #navbar_part a {
   text-decoration: none;
+}
+
+.highlight_nav > a {
   color: black;
+  font-weight: bold;
+}
+
+.normal_nav > a {
+  color: gray;
 }
 
 /* footer */
@@ -82,18 +90,32 @@
 }
 
 /* work page */
+#parent_work {
+  position: relative;
+}
+
+#child_work {
+  position: absolute;
+  top: 5vh;
+  width: 90vw;
+}
+
 .tab_list {
   display: flex;
+  text-align: left;
+  margin-bottom: 2vh;
 }
 
 .tab_list > li {
   list-style: none;
-  margin-right: 1vw;
+  margin-right: 0.5vw;
+  line-height: 12px;
 }
 
 .tab_list > li > a {
   text-decoration: none;
-  color: black;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .work_flex {
@@ -102,6 +124,16 @@
 
 #work_left {
   width: 50%;
+  margin-top: 20vh;
+}
+
+#work_left_only {
+  width: 50%;
+  margin-top: 20vh;
+}
+
+.work_left_loading_failed {
+  margin-top: 25vh;
 }
 
 #work_right {
@@ -110,4 +142,94 @@
 
 .work_list {
   list-style: none;
+}
+
+.normal_tag {
+  color: black;
+  border: solid 1px black;
+}
+
+.normal_tag a {
+  color: black;
+}
+
+.tag_event {
+  padding: 1px 10px;
+  text-decoration: none;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.highlight_tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  background-color: black;
+}
+
+.highlight_tag > a {
+  color: white;
+  font-weight: bold;
+}
+
+.result_number {
+  margin: 28px 0px;
+}
+
+/* work_detail_page */
+.detail_page {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.detail_headline {
+  text-align: left;
+  font-size: 35px;
+  margin-bottom: 6vh;
+}
+
+.detail_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+.detail_title {
+  font-weight: bold;
+}
+
+/* work/image/wrapper */
+
+.image_wrapper_in_detail {
+  margin-top: 1vh;
+}
+
+.button_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 10vw;
+  margin: 2vh auto;
+}
+
+.button_for_screen_shot {
+  width: 0.7vw;
+  height: 0.7vw;
+  background-color: gray;
+  border-radius: 0.7vw;
+  cursor: pointer;
+}
+
+.button_highlight {
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 0.7vw;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* about page */
+/* about page */
+
+#about_description p {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

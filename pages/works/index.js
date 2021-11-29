@@ -7,8 +7,7 @@ import WorkLayout from "../../components/work";
 
 export default function Works(){
     const [effect, setEffect] = useState(false);
-    console.log('kiyokiyo')
-
+ 
     useEffect(()=>{
         setEffect(true)
     }, [])
@@ -17,14 +16,15 @@ export default function Works(){
         <Head>
             <title>Work / Neu-Gier</title>
         </Head>
-        {/* <h2 className={`page_header ${effect?"page_header_effect":""}`}>Work</h2> */}
-        <ul className="tab_list">
-            <li><Link href="/works/all"><a>All</a></Link></li>
-            <li><Link href="/works/react"><a>React</a></Link></li>
-            <li><Link href="/works/next"><a>Next</a></Link></li>
-            <li><Link href="/works/node"><a>Node</a></Link></li>
-            <li><Link href="/works/mongo"><a>Mongo</a></Link></li>
-        </ul>
+            <div id="work_left_only">
+                <ul className="tab_list">
+                    <li className="normal_tag tag_event"><Link href="/works/all"><a>All</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/react"><a>React</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/next"><a>Next</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/node"><a>Node</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/mongo"><a>Mongo</a></Link></li>
+                </ul>
+            </div>
         </>
     )
 }
