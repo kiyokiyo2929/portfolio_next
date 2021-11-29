@@ -324,3 +324,58 @@
 #contact_flext {
   height: 85vh;
 }
+
+/* Top-page */
+.top_page_new_effect {
+  /* position: relative; */
+  top: 50%;
+  width: 18em;
+  margin: 0 auto;
+  border-right: 2px solid black;
+  font-size: 200%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.anim-typewriter {
+  animation: typewriter 4s steps(30) 1s 1 normal both,
+    blinkTextCursor 500ms steps(30) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.top_page_parent {
+  width: 90vw;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.top_page {
+  font-size: 50px;
+  margin: 0 auto;
+  transition: opacity 8s, font-size 8s;
+  opacity: 0;
+}
+
+.title_effect {
+  opacity: 1;
+  font-size: 55px;
+}

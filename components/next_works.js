@@ -26,7 +26,7 @@ export default function NextWorks({children}){
                 <div>
             <ul className='work_list'>
               {data.map((work)=>(
-                 <li key={work._id}><Link href={`/works/mongo/${work._id}`}>
+                 <li key={work._id}><Link href={`/works/next/${work._id}`}>
                    <a>
                     <div className='work_list_image_wrapper'>
                      <img src={work. image_1} className="worklist_image"/>
