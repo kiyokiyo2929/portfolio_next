@@ -68,15 +68,15 @@ export default function EachWork(work){
                     <div onClick={image2_click} className={button2?"button_highlight":"button_for_screen_shot"}></div>
                     <div onClick={image3_click} className={button3?"button_highlight":"button_for_screen_shot"} id="last_button"></div>
                 </div>
-                    {/* <div>
-                        {image1?<img src={`${process.env.PUBLIC_URL}/${work.image_name[0]}`} className="screen_shot"/>:<></>}
+                    <div>
+                        {image1?<img src={work.work.image_1} className="screen_shot"/>:<></>}
                      </div>
                      <div>
-                         {image2?<img src={`${process.env.PUBLIC_URL}/${work.image_name[1]}`} className="screen_shot"/>:<></>}
+                         {image2?<img src={work.work.image_2} className="screen_shot"/>:<></>}
                       </div>
                      <div>
-                         {image3?<img src={`${process.env.PUBLIC_URL}/${work.image_name[2]}`} className="screen_shot"/>:<></>}
-                     </div> */}
+                         {image3?<img src={work.work.image_3} className="screen_shot"/>:<></>}
+                     </div>
                 </div>
              </div>
         </>

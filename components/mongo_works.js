@@ -24,13 +24,22 @@ export default function MongoWorks({children}){
           </ul>
          <p className="result_number">Next Works / <span className="result_number_bold">{number} </span> works</p>
         
-          <ul  className="work_list">
-            {data.map((work)=>(
-                <li key={work._id}>
-                    <Link href={`/works/mongo/${work._id}`}><a><p>{work.name}</p></a></Link>
+
+            <div>
+            <ul className='work_list'>
+              {data.map((work)=>(
+                 <li key={work._id}><Link href={`/works/mongo/${work._id}`}>
+                   <a>
+                    <div className='work_list_image_wrapper'>
+                     <img src={work. image_1} className="worklist_image"/>
+                     <h3>{work.name}</h3>
+                     </div>
+                   </a>
+                </Link>
                 </li>
-            ))}
-          </ul>
+              ))}
+             </ul>
+            </div>
           </div>
          <main id="work_right">{children}</main>
         </div>

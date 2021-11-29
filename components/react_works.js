@@ -23,13 +23,21 @@ export default function ReactWorks({children}){
                   <li className="normal_tag tag_event"><Link href="/works/mongo"><a>MongoDB</a></Link></li>
                 </ul>
                 <p className="result_number">React Works / <span className="result_number_bold"> {number} </span> works</p>
-                <ul className="work_list">
-                  {data.map((work)=>(
-                  <li key={work._id}>
-                      <Link href={`/works/react/${work._id}`}><a><p>{work.name}</p></a></Link>
-                  </li>
-                  ))}
-              </ul>
+                <div>
+                 <ul className='work_list'>
+                    {data.map((work)=>(
+                      <li key={work._id}><Link href={`/works/mongo/${work._id}`}>
+                        <a>
+                          <div className='work_list_image_wrapper'>
+                          <img src={work. image_1} className="worklist_image"/>
+                          <h3>{work.name}</h3>
+                          </div>
+                        </a>
+                      </Link>
+                      </li>
+                    ))}
+                 </ul>
+            </div>
             </div>
             <main id="work_right">{children}</main>
         </div>
