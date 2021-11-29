@@ -19,10 +19,10 @@ export default function Works(){
             <div id="work_left_only">
                 <ul className="tab_list">
                     <li className="normal_tag tag_event"><Link href="/works/all"><a>All</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/react"><a>React</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/next"><a>Next</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/node"><a>Node</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/mongo"><a>Mongo</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/react"><a>React.js</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/next"><a>Next.js</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/node"><a>Node.js</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/mongo"><a>MongoDB</a></Link></li>
                 </ul>
             </div>
         </>

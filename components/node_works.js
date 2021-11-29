@@ -17,12 +17,12 @@ export default function NodeWorks({children}){
             <div id="work_left">
                 <ul className="tab_list">
                     <li className="normal_tag tag_event"><Link href="/works/all"><a>All</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/react"><a>React</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/next"><a>Next</a></Link></li>
-                    <li className="highlight_tag"><Link href="/works/node"><a>Node</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/mongo"><a>Mongo</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/react"><a>React.js</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/next"><a>Next.js</a></Link></li>
+                    <li className="highlight_tag"><Link href="/works/node"><a>Node.js</a></Link></li>
+                    <li className="normal_tag tag_event"><Link href="/works/mongo"><a>MongoDB</a></Link></li>
                 </ul>
-                 <p className="result_number">React Works / {number} works</p>
+                 <p className="result_number">React Works / <span className="result_number_bold">{number}</span> works</p>
                 <ul  className="work_list">
                     {data.map((work)=>(
                         <li key={work._id}>

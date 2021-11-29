@@ -120,6 +120,7 @@
 
 .work_flex {
   display: flex;
+  height: 85vh;
 }
 
 #work_left {
@@ -173,6 +174,10 @@
 
 .result_number {
   margin: 28px 0px;
+}
+
+.result_number_bold {
+  font-weight: bold;
 }
 
 /* work_detail_page */
@@ -230,6 +235,41 @@
 /* about page */
 
 #about_description p {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+#about_flex {
+  display: flex;
+  height: 85vh;
+}
+
+#about_left,
+#about_right {
+  width: 50%;
+}
+
+#profile_picture {
+  object-fit: cover;
+}
+
+#image_position {
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 22vh;
+}
+
+.icon_wrapper {
+  display: flex;
+}
+
+.icon_wrapper > div {
+  margin-top: 1vh;
+  margin-right: 0.3vw;
+}
+
+/* contact page */
+/* contact page */
+#contact_flext {
+  height: 85vh;
 }

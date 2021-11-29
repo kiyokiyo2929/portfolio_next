@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image"
 import React, {useState, useEffect } from "react";
 
 import Layout from "../../components/layout_navbar_footer"
@@ -27,12 +28,14 @@ export default function About(){
                      <p>I'm a full stack developer.</p>
                      <p>I live in Berlin.</p>
                      <p>I can speak Japanese and English.</p>
-                     <p>I can use JavaScript/React/Node.js/Express.js and MongoDB.</p>
+                     <p>I can use JavaScript/React.js/Next.js/Node.js/Express.js and MongoDB.</p>
                      <p>I like contemporary art and design.</p>
                 </div>
             </div>
             <div id="about_right">
-
+                <div id="image_position">
+                <Image src="/profile3.jpeg" width={550} height={320} id="profile_picture"/>
+                </div>
             </div>
 
         </div>
