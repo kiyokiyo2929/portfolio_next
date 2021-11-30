@@ -1,6 +1,7 @@
 import clientPromise from "../../../lib/mongodb";
 import Head from "next/head"
 import React, {useState, useEffect} from 'react';
+import Image from "next/image";
 
 
 import Layout from "../../../components/layout_navbar_footer";

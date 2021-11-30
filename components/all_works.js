@@ -18,11 +18,11 @@ export default function AllWorks({children}){
         <div className="work_flex">
             <div id="work_left">
                 <ul className="tab_list">
-                    <li className="highlight_tag"><Link href="/works/all"><a>All</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/react"><a>React.js</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/next"><a>Next.js</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/node"><a>Node.js</a></Link></li>
-                    <li className="normal_tag tag_event"><Link href="/works/mongo"><a>MongoDB</a></Link></li>
+                    <Link href="/works/all"><li className="highlight_tag"><a className="highlight_font">All</a></li></Link>
+                    <Link href="/works/react"><li className="normal_tag tag_event"><a>React.js</a></li></Link>
+                    <Link href="/works/next"><li className="normal_tag tag_event"><a>Next.js</a></li></Link>
+                    <Link href="/works/node"><li className="normal_tag tag_event"><a>Node.js</a></li></Link>
+                    <Link href="/works/mongo"><li className="normal_tag tag_event"><a>MongoDB</a></li></Link>
                 </ul>
                 <p className="result_number">All Works / <span className="result_number_bold">{number}</span> works</p>
                 <div>
