@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+main {
+  width: 90vw;
+}
+
 #main_part {
   width: 90vw;
   margin: 0 auto;
@@ -122,6 +126,7 @@
 .work_flex {
   display: flex;
   height: 85vh;
+  width: 100%;
 }
 
 #work_left {
@@ -304,15 +309,6 @@
   margin-top: 22vh;
 }
 
-.icon_wrapper {
-  display: flex;
-}
-
-.icon_wrapper > div {
-  margin-top: 1vh;
-  margin-right: 0.3vw;
-}
-
 .screen_shot {
   width: 35vw;
   height: 38vh;
@@ -322,8 +318,23 @@
 
 /* contact page */
 /* contact page */
-#contact_flext {
+#contact_flex {
   height: 85vh;
+  /* width: 100%; */
+}
+
+#contact_left,
+#contact_right {
+  width: 50%;
+}
+
+.icon_wrapper {
+  display: flex;
+}
+
+.icon_wrapper > div {
+  margin-top: 1vh;
+  margin-right: 0.3vw;
 }
 
 /* Top-page */
@@ -379,4 +390,140 @@
 .title_effect {
   opacity: 1;
   font-size: 55px;
+}
+
+@media screen and (max-width: 765px) {
+  #__next {
+    width: 100vw;
+  }
+
+  body {
+    width: 100vw;
+  }
+
+  /* footer */
+  #footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+  }
+
+  /* top-page */
+  .top_page_new_effect {
+    font-size: 20px;
+  }
+
+  /* header */
+  #header {
+    width: 90vw;
+  }
+
+  #navbar-part {
+    justify-content: space-between;
+  }
+
+  /* common */
+  .header_font > h2 {
+    font-size: 20vw;
+  }
+
+  /* work_page */
+  .work_flex {
+    flex-direction: column;
+  }
+
+  #work_left,
+  #work_right {
+    width: 100%;
+  }
+
+  .worklist_image {
+    width: 99%;
+  }
+
+  .work_list_image_wrapper {
+    width: 100%;
+  }
+
+  /* work_detail_page */
+  .detail_headline {
+    font-size: 8vw;
+  }
+
+  .detail_page {
+    height: 70vh;
+  }
+
+  .screen_shot {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .image_wrapper_in_detail {
+    object-fit: cover;
+  }
+
+  .technologies {
+    width: 60%;
+    text-align: right;
+  }
+
+  .button_for_screen_shot,
+  .button_highlight {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+  }
+
+  .button_flex {
+    width: 30vw;
+  }
+
+  /* about_page */
+
+  #about_flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  #about_left,
+  #about_right {
+    width: 100%;
+  }
+
+  #about_left p {
+    font-size: 4vw;
+  }
+
+  #about_right {
+    height: 40vh;
+  }
+
+  #image_position {
+    margin-top: 40px;
+    height: 33vh;
+  }
+
+  /* contact_page */
+  #contact_flex {
+    flex-direction: column;
+  }
+  #contact_left {
+    width: 100%;
+  }
+  #contact_right {
+    width: 100%;
+  }
+
+  #contact_name {
+    width: 70vw;
+    font-size: 7vw;
+    margin-bottom: 2vh;
+  }
+
+  .icon_wrapper {
+    width: 70vw;
+  }
+  .icon_wrapper > div {
+    margin-right: 5.2vw;
+  }
 }

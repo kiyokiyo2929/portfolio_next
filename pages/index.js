@@ -8,7 +8,7 @@ export default function Home({ isConnected }) {
     <div className="container">
       <Head>
         <title>Top Page / Neu-Gier </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png"/>
       </Head>
 
       <main>

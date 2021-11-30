@@ -11,7 +11,8 @@ export default function Works(){
         <Head>
             <title>Work / Neu-Gier</title>
         </Head>
-            <div id="work_left_only">
+          <div className="work_flex">
+            <div id="work_left">
                 <ul className="tab_list">
                     <li className="normal_tag tag_event"><Link href="/works/all"><a>All</a></Link></li>
                     <li className="normal_tag tag_event"><Link href="/works/react"><a>React.js</a></Link></li>
@@ -20,6 +21,10 @@ export default function Works(){
                     <li className="normal_tag tag_event"><Link href="/works/mongo"><a>MongoDB</a></Link></li>
                 </ul>
             </div>
+             <div id="work_right"></div>
+          </div>
+         
+       
         </>
     )
 }
