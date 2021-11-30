@@ -1,6 +1,8 @@
 import useSWR from "swr";
 import axios from "axios";
 import Link from "next/link"
+import Image from "next/image";
+
 
 export default function AllWorks({children}){
     const fetcher = url => axios.get(url).then(res=>res.data)
@@ -30,7 +32,7 @@ export default function AllWorks({children}){
                      <Link href={`/works/all/${work._id}`}>
                         <a>
                             <div className='work_list_image_wrapper'>
-                            <img src={work. image_1} className="worklist_image"/>
+                            <Image src={work. image_1} width={1000} height={550} className="worklist_image" style="border: solid 1px black"/>
                             <h3>{work.name}</h3>
                             </div>
                         </a>

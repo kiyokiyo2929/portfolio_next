@@ -242,11 +242,12 @@ main {
   width: 40vw;
   position: relative;
   margin-bottom: 3vh;
+  border: solid 1px black;
 }
 
 .worklist_image {
   width: 40vw;
-  border: solid 1px black;
+  object-fit: cover;
 }
 
 .work_list_image_wrapper > h3 {
@@ -393,14 +394,6 @@ main {
 }
 
 @media screen and (max-width: 765px) {
-  #__next {
-    width: 100vw;
-  }
-
-  body {
-    width: 100vw;
-  }
-
   /* footer */
   #footer {
     position: fixed;
