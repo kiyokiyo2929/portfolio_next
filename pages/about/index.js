@@ -28,7 +28,7 @@ export default function About(){
                      <p>I'm a full stack developer.</p>
                      <p>I live in Berlin.</p>
                      <p>I can speak Japanese and English.</p>
-                     <p>I can use JavaScript/React.js/Next.js/Node.js/Express.js and MongoDB.</p>
+                     <p>I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB.</p>
                      <p>I like contemporary art and design.</p>
                 </div>
             </div>

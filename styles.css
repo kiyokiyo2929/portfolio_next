@@ -355,6 +355,11 @@ main {
 }
 
 /* work_detail_page */
+
+.mobile_detail_page {
+  display: none;
+}
+
 .detail_page {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -617,6 +622,10 @@ main {
     width: 100%;
   }
 
+  #work_left {
+    margin-top: 12vh;
+  }
+
   .worklist_image {
     width: 99%;
   }
@@ -634,6 +643,44 @@ main {
   }
 
   /* work_detail_page */
+  .detail_flex {
+    margin: 30px 0px;
+  }
+
+  .detail_page {
+    display: none;
+  }
+
+  .mobile_detail_page {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 7.5vh;
+    left: 0px;
+    border-top: solid 1px black;
+    background-color: white;
+  }
+
+  #mobile_detail_part {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #mobile_detail_btn {
+    text-align: right;
+    font-size: 15vw;
+    cursor: pointer;
+    margin: 10px 3px;
+  }
+
+  .mobile_detail_on {
+    display: block;
+  }
+  .mobile_detail_off {
+    display: none;
+  }
+
   .detail_headline {
     font-size: 8vw;
   }
@@ -679,11 +726,24 @@ main {
   }
 
   #about_left p {
-    font-size: 4vw;
+    font-size: 15px;
   }
 
   #about_right {
     height: 40vh;
+  }
+
+  #about_description {
+    width: 90vw;
+  }
+
+  #about_description p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  #about_description > p:last-child {
+    margin-bottom: 0px;
   }
 
   #image_position {

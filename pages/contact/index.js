@@ -8,6 +8,10 @@ import Layout from "../../components/layout_navbar_footer"
 export default function Contact(){
     const [effect, setEffect] = useState(false);
 
+    const pop_up = () =>{
+        alert("kiyokiyo2929@gmail.com")
+      }
+
     useEffect(()=>{
         setEffect(true)
     }, [])
@@ -24,11 +28,11 @@ export default function Contact(){
                 </div>
                 <p id="contact_name">Kiyohide Hayashi</p>
                 <div className="icon_wrapper">
-                    <div><a><Image src="/gmail.png" width={22} height={22}/></a></div>
+                    <div onClick={pop_up}><Image src="/gmail.png" width={22} height={22}/></div>
                     <div><a href="https://www.linkedin.com/in/kiyohidehayashi/"><Image src="/linkedin.png" width={22} height={22}/></a></div>
                     <div><a href="https://www.xing.com/profile/Kiyohide_Hayashi/cv"><Image src="/xing.png"   width={22} height={22} /></a></div>
                     <div><a href="https://github.com/kiyokiyo2929"><Image src="/github.png" width={22} height={22}/></a></div>
-                    <div><a href="https://www.instagram.com/neu_gier/"><Image src="/instagram.png"  width={22} height={22} /></a></div>
+                    <div><a href="https://www.instagram.com/go_to_office_/"><Image src="/instagram.png"  width={22} height={22} /></a></div>
                 </div>
             </div>
             <div id="contact_right">

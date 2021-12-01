@@ -16,6 +16,8 @@ export default function EachWork(work){
     const [button1, setButton1] = useState(true);
     const [button2, setButton2] = useState(false);
     const [button3, setButton3] = useState(false);
+    const [mobile, setMobile] = useState(false);
+
 
     const image1_click =()=>{
         setImage1(true);
@@ -42,8 +44,14 @@ export default function EachWork(work){
         setButton3(true);
     }
 
+    const mobile_click =()=>{
+        setMobile(false);
+    }
+
+
     useEffect(()=>{
         image1_click();
+        setMobile(true);
     }, [work])
   
 
@@ -84,7 +92,44 @@ export default function EachWork(work){
                      </div>
                    
                 </div>
-             </div>
+         </div>
+
+         <div className={`mobile_detail_page ${mobile?"mobile_detail_on":"mobile_detail_off"}`}>
+            <div id="mobile_detail_part">
+                <p id="mobile_detail_btn" onClick={mobile_click}>x</p>
+                <h2 className="detail_headline">{work.work.name}</h2>
+ 
+                <div className="detail_flex">
+                        <p className="detail_title">Technologies</p>
+                        <p className="technologies">{work.work.technologies}</p>
+                </div>
+                <div className="detail_flex">
+                        <p className="detail_title">Web-site</p>
+                        <a href={work.work.link} className="work_detail_web"><p>{work.work.name}</p></a>
+                </div>
+                <div className="detail_flex">
+                        <p className="detail_title">Repositories</p>
+                        {work.work.repositories?
+                        <a href={work.work.repositories}><p>{work.work.repositories}</p></a>:<></>}
+                </div>
+                <div  className="image_wrapper_in_detail">
+                <div className="button_flex">
+                    <div onClick={image1_click} className={button1?"button_highlight":"button_for_screen_shot"}></div>
+                    <div onClick={image2_click} className={button2?"button_highlight":"button_for_screen_shot"}></div>
+                    <div onClick={image3_click} className={button3?"button_highlight":"button_for_screen_shot"} id="last_button"></div>
+                </div>
+                    <div>
+                        {image1?<img src={work.work.image_1} className="screen_shot"/>:<></>}
+                     </div>
+                     <div>
+                         {image2?<img src={work.work.image_2} className="screen_shot"/>:<></>}
+                      </div>
+                     <div>
+                         {image3?<img src={work.work.image_3} className="screen_shot"/>:<></>}
+                     </div>
+                </div>
+            </div>
+         </div>
         </>
     )
 }
