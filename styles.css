@@ -385,6 +385,13 @@ main {
   color: black;
 }
 
+.screen_shot {
+  width: 35vw;
+  height: 41vh;
+  object-fit: cover;
+  border: solid 0.5px black;
+}
+
 /* work/image/wrapper */
 
 .image_wrapper_in_detail {
@@ -486,13 +493,6 @@ main {
   margin-right: 5vw;
   margin-left: 5vw;
   margin-top: 22vh;
-}
-
-.screen_shot {
-  width: 35vw;
-  height: 38vh;
-  object-fit: cover;
-  border: solid 0.5px black;
 }
 
 /* contact page */
@@ -632,6 +632,7 @@ main {
 
   .tab_list {
     width: 100%;
+    justify-content: space-between;
   }
 
   .work_list_image_wrapper {
@@ -676,6 +677,11 @@ main {
     margin: 10px 3px;
   }
 
+  .work_list_image_wrapper > h3 {
+    font-size: 30px;
+    top: 50px;
+  }
+
   .mobile_detail_on {
     display: block;
   }
@@ -693,7 +699,7 @@ main {
 
   .screen_shot {
     width: 100%;
-    height: 25vh;
+    height: 28vh;
   }
 
   .image_wrapper_in_detail {
@@ -750,6 +756,7 @@ main {
 
   #image_position {
     margin-top: 40px;
+    margin-bottom: 40px;
     height: 33vh;
   }
 
