@@ -1,3 +1,169 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
 * {
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
@@ -23,9 +189,9 @@ main {
 #navbar_part {
   display: flex;
   height: 7.5vh;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  /* padding-left: 0; */
 }
 
 #navbar_part > li {
@@ -76,6 +242,7 @@ main {
   margin-bottom: 5vh;
   text-align: left;
   font-size: 16vh;
+  width: 40vw;
 }
 
 .highlight {
@@ -209,6 +376,10 @@ main {
   font-weight: bold;
 }
 
+.work_detail_web {
+  color: black;
+}
+
 /* work/image/wrapper */
 
 .image_wrapper_in_detail {
@@ -329,6 +500,7 @@ main {
 #contact_left,
 #contact_right {
   width: 50%;
+  height: 70vh;
 }
 
 .icon_wrapper {
@@ -396,6 +568,18 @@ main {
 }
 
 @media screen and (max-width: 765px) {
+  html,
+  body,
+  * {
+    box-sizing: border-box;
+  }
+
+  #__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
   /* footer */
   #footer {
     position: fixed;
@@ -413,7 +597,7 @@ main {
     width: 90vw;
   }
 
-  #navbar-part {
+  #header > ul {
     justify-content: space-between;
   }
 
@@ -425,6 +609,7 @@ main {
   /* work_page */
   .work_flex {
     flex-direction: column;
+    width: 100%;
   }
 
   #work_left,
@@ -436,8 +621,16 @@ main {
     width: 99%;
   }
 
+  .tab_list {
+    width: 100%;
+  }
+
   .work_list_image_wrapper {
     width: 100%;
+  }
+
+  .tag_event {
+    padding: 1px 7px;
   }
 
   /* work_detail_page */

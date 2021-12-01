@@ -47,7 +47,7 @@ export default function EachWork(work){
     useEffect(()=>{
         image1_click();
     }, [work])
-    
+
     return(
         <>
          <Head><title>{work.work.name} / New-Gier</title></Head>
@@ -60,7 +60,7 @@ export default function EachWork(work){
                 </div>
                 <div className="detail_flex">
                         <p className="detail_title">Web-site</p>
-                        <a href={work.work.link}><p>{work.work.name}</p></a>
+                        <a href={work.work.link}  className="work_detail_web"><p>{work.work.name}</p></a>
                 </div>
                 <div className="detail_flex">
                         <p className="detail_title">Repositories</p>
