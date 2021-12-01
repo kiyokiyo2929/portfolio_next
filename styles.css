@@ -494,7 +494,7 @@ main {
 /* contact page */
 #contact_flex {
   height: 85vh;
-  /* width: 100%; */
+  width: 100%;
 }
 
 #contact_left,
@@ -589,7 +589,7 @@ main {
 
   /* top-page */
   .top_page_new_effect {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /* header */
@@ -703,13 +703,13 @@ main {
   }
 
   #contact_name {
-    width: 70vw;
+    width: 100%;
     font-size: 7vw;
     margin-bottom: 2vh;
   }
 
   .icon_wrapper {
-    width: 70vw;
+    width: 100%;
   }
   .icon_wrapper > div {
     margin-right: 5.2vw;
