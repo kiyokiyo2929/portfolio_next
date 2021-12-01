@@ -74,7 +74,8 @@ export default function EachWork(work){
                 <div className="detail_flex">
                         <p className="detail_title">Repositories</p>
                         {work.work.repositories?
-                        <a href={work.work.repositories}><p>{work.work.repositories}</p></a>:<></>}
+                        <a href={work.work.repositories} className="detail_repo"><p>Github</p></a>:<></>}
+
                 </div>
                 <div  className="image_wrapper_in_detail">
                 <div className="button_flex">
@@ -110,7 +111,8 @@ export default function EachWork(work){
                 <div className="detail_flex">
                         <p className="detail_title">Repositories</p>
                         {work.work.repositories?
-                        <a href={work.work.repositories}><p>{work.work.repositories}</p></a>:<></>}
+                        <a href={work.work.repositories} className="detail_repo"><p>Github</p></a>:<></>}
+
                 </div>
                 <div  className="image_wrapper_in_detail">
                 <div className="button_flex">

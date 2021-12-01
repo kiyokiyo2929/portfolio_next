@@ -383,6 +383,10 @@ main {
   text-align: right;
 }
 
+.detail_repo {
+  color: black;
+}
+
 .work_detail_web {
   color: black;
 }
@@ -717,6 +721,10 @@ main {
     text-align: right;
   }
 
+  .detail_repo > p {
+    text-decoration: underline;
+  }
+
   .button_for_screen_shot,
   .button_highlight {
     width: 15px;
@@ -726,6 +734,8 @@ main {
 
   .button_flex {
     width: 30vw;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
 
   /* about_page */
