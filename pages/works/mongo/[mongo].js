@@ -56,7 +56,10 @@ export default function EachWork(work){
 
     return(
         <>
-         <Head><title>{work.work.name} / Neu-Gier</title></Head>
+           <Head>
+             <title>{work.work.name} / Neu-Gier</title>
+             <meta name="description" content={`This page is to introduce my programing work, ${work.work.name}. I'm Kiyohide Hayashi. I'm Japanese. I'm a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB.`}/>
+             </Head>
          <div className="detail_page">
                 <h2 className="detail_headline">{work.work.name}</h2>
  
