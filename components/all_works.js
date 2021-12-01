@@ -6,11 +6,10 @@ import Image from "next/image";
 
 export default function AllWorks({children}){
     const fetcher = url => axios.get(url).then(res=>res.data)
-    const {data, error} = useSWR("/api/test", fetcher)
+    const {data, error} = useSWR("/api/all", fetcher)
     if(error) return <div className="work_left_loading_failed">failed to load</div>
     if(!data) return <div className="work_left_loading_failed">loading</div>
 
-    console.log(data)
 
     const number = data.length;
     return(

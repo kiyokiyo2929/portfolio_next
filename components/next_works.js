@@ -9,7 +9,6 @@ export default function NextWorks({children}){
     if(error) return <div className="work_left_loading_failed">failed to load</div>
     if(!data) return <div className="work_left_loading_failed">loading</div>
 
-    console.log(data)
 
     const number = data.length;
     return(

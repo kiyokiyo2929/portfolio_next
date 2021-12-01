@@ -6,10 +6,9 @@ import Image from "next/image";
 export default function MongoWorks({children}){
     const fetcher = url => axios.get(url).then(res=>res.data)
     const {data, error} = useSWR("/api/mongo", fetcher)
-    if(error) return <div className="work_left_loading_failed">failed to laad</div>
+    if(error) return <div className="work_left_loading_failed">failed to load</div>
     if(!data) return <div className="work_left_loading_failed">loading</div>
 
-    console.log(data)
 
     const number = data.length;
     return(

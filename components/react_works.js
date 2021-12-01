@@ -6,10 +6,9 @@ import Image from "next/image";
 export default function ReactWorks({children}){
     const fetcher = url => axios.get(url).then(res=>res.data)
     const {data, error} = useSWR("/api/react", fetcher)
-    if(error) return <div className="work_left_loading_failed">failed to lad</div>
+    if(error) return <div className="work_left_loading_failed">failed to load</div>
     if(!data) return <div className="work_left_loading_failed">loading</div>
 
-    console.log(data)
 
     const number = data.length;
     return(
