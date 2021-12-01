@@ -181,7 +181,7 @@ main {
 
 /* header */
 #header {
-  border-bottom: solid 0.2px gainsboro;
+  border-bottom: solid 0.2px black;
   width: 90vw;
   margin: 0 auto;
 }
@@ -189,9 +189,6 @@ main {
 #navbar_part {
   display: flex;
   height: 7.5vh;
-  /* margin-top: 0;
-  margin-bottom: 0; */
-  /* padding-left: 0; */
 }
 
 #navbar_part > li {
@@ -225,7 +222,7 @@ main {
   margin: 0 auto;
   width: 90vw;
   height: 7.5vh;
-  border-top: solid 0.2px gainsboro;
+  border-top: solid 0.2px black;
 }
 
 #footer > p {
@@ -237,7 +234,7 @@ main {
 
 /* common item */
 .header_font > h2 {
-  margin-top: 0;
+  margin-top: 25px;
   padding-top: 0;
   margin-bottom: 5vh;
   text-align: left;
@@ -382,6 +379,10 @@ main {
   font-weight: bold;
 }
 
+.technologies {
+  text-align: right;
+}
+
 .work_detail_web {
   color: black;
 }
@@ -471,7 +472,7 @@ main {
 /* about page */
 /* about page */
 #about_description {
-  margin-top: 55px;
+  margin-top: 45px;
 }
 
 #about_description p {
@@ -790,5 +791,69 @@ main {
   }
   .icon_wrapper > div {
     margin-right: 5.2vw;
+  }
+}
+@media screen and (min-width: 765px) and (max-width: 1025px) {
+  /* common  */
+  #navbar_part {
+    display: flex;
+    justify-content: space-between;
+    height: 7.5vh;
+  }
+
+  #navbar_part > li {
+    line-height: 7.5vh;
+    font-size: 2vh;
+  }
+  /* work_page */
+  .header_font > h2 {
+    font-size: 13vh;
+  }
+
+  /* work_detail */
+  .screen_shot {
+    height: 17vh;
+    width: 100%;
+  }
+
+  .detail_page {
+    margin-right: 0;
+  }
+
+  .button_for_screen_shot {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 2vw;
+  }
+
+  .button_highlight {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 2vw;
+  }
+
+  .button_flex {
+    width: 20vw;
+    margin: 9vh auto 3vh auto;
+  }
+
+  .detail_headline {
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 10vh;
+  }
+
+  /* contact */
+  #contact_right {
+    display: none;
+  }
+
+  #contact_name {
+    font-size: 4vw;
+    margin-bottom: 2vh;
+  }
+
+  .icon_wrapper > div {
+    margin-right: 4vw;
   }
 }
