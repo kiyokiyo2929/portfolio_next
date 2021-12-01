@@ -57,7 +57,7 @@ export default function EachWork(work){
 
     return(
         <>
-         <Head><title>{work.work.name} / New-Gier</title></Head>
+         <Head><title>{work.work.name} / Neu-Gier</title></Head>
          <div className="detail_page">
                 <h2 className="detail_headline">{work.work.name}</h2>
  
