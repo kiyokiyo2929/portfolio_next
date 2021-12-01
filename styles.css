@@ -517,6 +517,10 @@ main {
   height: 70vh;
 }
 
+#contact_right {
+  display: none;
+}
+
 .icon_wrapper {
   display: flex;
 }
