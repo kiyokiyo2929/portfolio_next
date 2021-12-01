@@ -16,7 +16,7 @@ export default function About(){
         <>
         <Head>
             <title>About / Neu-Gier</title>
-            <meta name="description" content="This is the About page. I'm Kiyohide Hayashi. I'm Japanese. I'm a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB."/>
+            <meta name="description" content="This is the About page. I\'m Kiyohide Hayashi. I\'m Japanese. I\'m a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB."/>
         </Head>
         <div id="about_flex">
             <div id="about_left">

@@ -20,7 +20,7 @@ export default function Contact(){
         <>
         <Head>
             <title> Contact / Neu-Gier </title>
-            <meta name="description" content="This is the Contact page. I'm Kiyohide Hayashi. I'm Japanese. I'm a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB."/>
+            <meta name="description" content="This is the Contact page. I\'m Kiyohide Hayashi. I\'m Japanese. I\'m a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB."/>
         </Head>
         <div id="contact_flex">
             <div id="contact_left">

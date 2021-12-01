@@ -10,7 +10,7 @@ export default function Works(){
         <>
         <Head>
             <title>Work / Neu-Gier</title>
-            <meta name="description" content={`This page is to introduce my programing work. I'm Kiyohide Hayashi. I'm Japanese. I'm a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB.`}/>
+            <meta name="description" content={`This page is to introduce my programing work. I\'m Kiyohide Hayashi. I\'m Japanese. I\'m a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB.`}/>
         </Head>
           <div className="work_flex">
             <div id="work_left">

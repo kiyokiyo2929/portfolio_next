@@ -8,7 +8,7 @@ export default function Home({ isConnected }) {
     <div className="container">
       <Head>
         <title>Top Page / Neu-Gier </title>
-        <meta name="description" content="I'm Kiyohide Hayashi. I'm Japanese. I'm a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB."/>
+        <meta name="description" content="I\'m Kiyohide Hayashi. I\'m Japanese. I\'m a full stack developer. I live in Berlin. I can use JavaScript / React.js / Next.js / Node.js / Express.js and MongoDB."/>
         <link rel="icon" href="/favicon.png"/>
         </Head>
 
